@@ -5,8 +5,8 @@ from zbxapp.models import Server
 
 def update():
     try:
-        zapi = ZabbixAPI("http://192.168.112.157:4720")
-        zapi.login("riri", "rayta")
+        zapi = ZabbixAPI("http://******")
+        zapi.login("****", "*****")
         for h in zapi.host.get(output="extend"):
             if not Server.objects.filter(name=h['name']).exists():
                 get = Server(name=h['name'])
