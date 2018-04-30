@@ -18,6 +18,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -67,7 +68,7 @@ WSGI_APPLICATION = 'zbxmonitor.wsgi.application'
 DATABASES = {
        'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'zb',
+        'NAME': 'zBx',
         'USER': 'mahsa',
         'PASSWORD': 'mahsa',
         'HOST': '',
