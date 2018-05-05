@@ -10,10 +10,10 @@ from .models import Server, LastMemory, LastCpu
 class ServerModelAdmin(admin.ModelAdmin):
     actions = ["export_as_csv"]
     list_display = (
-    'name', 'date', 'firewall', 'mcafee', 'telnet', 'maxusedmemory','maxusedcpu','freediskc', 'freediskd', 'freediske', 'freediskf', 'freediskg',
-    'freediskh', 'freediski')
+        'name', 'date', 'firewall', 'mcafee', 'telnet', 'maxusedmemory', 'maxusedcpu', 'freediskc', 'freediskd',
+        'freediske', 'freediskf', 'freediskg',
+        'freediskh', 'freediski')
     search_fields = ('name',)
-
 
     def export_as_csv(self, request, queryset):
         meta = self.model._meta
@@ -40,6 +40,3 @@ class LastMemoryModelAdmin(admin.ModelAdmin):
 @admin.register(LastCpu)
 class LastCpuModelAdmin(admin.ModelAdmin):
     list_display = ('server', 'cpu', 'date')
-
-
-
