@@ -6,8 +6,8 @@ from zbxapp.models import Server, LastCpu, LastMemory
 
 def export():
     try:
-        zapi = ZabbixAPI("http://192.168.112.157:4720")
-        zapi.login("Mahsa", "Mahsa871^")
+        zapi = ZabbixAPI("http://*")
+        zapi.login("*", "*")
         for h in zapi.host.get(output="extend"):
             for host in Server.objects.filter(name=h['name']):
                 for i in zapi.item.get(filter={'host': host.name}):
