@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="313b93d8-bdaa-42ae-8f00-37b1ec11cdde" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zbxapp/management/commands/max.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -519,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1525105631240</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="max is created!">
+      <created>1525517953601</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1525517953601</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -556,7 +562,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first !" />
     <MESSAGE value="first!" />
-    <option name="LAST_COMMIT_MESSAGE" value="first!" />
+    <MESSAGE value="max is created!" />
+    <option name="LAST_COMMIT_MESSAGE" value="max is created!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
