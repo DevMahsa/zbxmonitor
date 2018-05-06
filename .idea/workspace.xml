@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="313b93d8-bdaa-42ae-8f00-37b1ec11cdde" name="Default" comment="">
+    <list default="true" id="313b93d8-bdaa-42ae-8f00-37b1ec11cdde" name="Default" comment="rows and fields are changed!">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zbxapp/admin.py" afterPath="$PROJECT_DIR$/zbxapp/admin.py" />
     </list>
@@ -88,8 +88,8 @@
       <file leaf-file-name="admin.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zbxapp/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+            <state relative-caret-position="251">
+              <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -584,7 +584,14 @@
       <option name="project" value="LOCAL" />
       <updated>1525545218596</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="rows and fields are changed!">
+      <created>1525602035747</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1525602035748</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -623,7 +630,8 @@
     <MESSAGE value="first!" />
     <MESSAGE value="max is created!" />
     <MESSAGE value="req is created!" />
-    <option name="LAST_COMMIT_MESSAGE" value="req is created!" />
+    <MESSAGE value="rows and fields are changed!" />
+    <option name="LAST_COMMIT_MESSAGE" value="rows and fields are changed!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -918,8 +926,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zbxapp/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+        <state relative-caret-position="251">
+          <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
