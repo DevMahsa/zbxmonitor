@@ -22,9 +22,14 @@ class ServerModelAdmin(admin.ModelAdmin):
         response['Content-Disposition'] = 'attachment; filename={}.csv'.format(datetime.now())
         writer = csv.writer(response)
 
-        writer.writerow(field_names)
-        for obj in queryset:
-            row = writer.writerow([getattr(obj, field) for field in field_names])
+        #writer.writerow(field_names)
+        for field in field_names:
+            row = [field]
+            for obj in queryset:
+                row.append(getattr(obj,field))
+            writer.writerow(row)
+        # for obj in queryset:
+        #     row = writer.writerow([getattr(obj, field) for field in field_names])
 
         return response
 
