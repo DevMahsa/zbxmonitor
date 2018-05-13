@@ -8,7 +8,7 @@ from zbxapp.models import Server, LastMemory, LastCpu
 def max():
     try:
         zapi = ZabbixAPI("http://192.168.112.157:4720")
-        zapi.login("Mahsa", "Mahsa871^")
+        zapi.login("riri", "rayta")
         for h in zapi.host.get(output="extend"):
             for host in Server.objects.filter(name=h['name']):
                 host.maxusedcpu = LastCpu.objects.filter(server_id=host.id).aggregate(Max('cpu'))['cpu__max']

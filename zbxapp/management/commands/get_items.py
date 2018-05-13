@@ -7,8 +7,8 @@ from zbxapp.models import Server
 def get_items():
     try:
         # FREE DISK SPACE LOGICAL F:
-        zapi = ZabbixAPI("http://*")
-        zapi.login("*", "*")
+        zapi = ZabbixAPI("http://192.168.112.157:4720")
+        zapi.login("riri", "rayta")
         for h in zapi.host.get(output="extend"):
             for host in Server.objects.filter(name=h['name']):
                 # curr=Server.objects.filter(name=h['name'])
