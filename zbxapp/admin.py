@@ -11,7 +11,7 @@ class ServerModelAdmin(admin.ModelAdmin):
     list_display = (
         'name', 'date', 'firewall', 'mcafee', 'telnet', 'maxusedmemory', 'maxusedcpu', 'freediskc', 'freediskd',
         'freediske', 'freediskf', 'freediskg',
-        'freediskh', 'freediski')
+        'freediskh', 'freediski','ssl_cert_exp','open_ports','win_active','critc_sys_log')
     search_fields = ('name',)
 
     def export_as_csv(self, request, queryset):

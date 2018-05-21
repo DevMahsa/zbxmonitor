@@ -16,6 +16,10 @@ class Server(models.Model):
     freediskh = models.CharField(max_length=500, null=True)
     freediski = models.CharField(max_length=500, null=True)
     telnet = models.CharField(max_length=500, null=True)
+    ssl_cert_exp = models.CharField(max_length=500, null=True)
+    open_ports = models.CharField(max_length=500, null=True)
+    win_active = models.CharField(max_length=500, null=True)
+    critc_sys_log = models.CharField(max_length=500, null=True)
 
     def __str__(self):
         return self.name
