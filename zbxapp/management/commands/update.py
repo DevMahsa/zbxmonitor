@@ -9,7 +9,7 @@ def update():
         zapi.login("riri", "rayta")
         for h in zapi.host.get(output="extend"):
             if not Server.objects.filter(name=h['name']).exists():
-                get = Server(name=h['name'])
+                get = Server(name=h['name'], hostid = h['hostid'])
                 get.save()
     except Exception as e:
         print e

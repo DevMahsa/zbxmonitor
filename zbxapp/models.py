@@ -3,6 +3,7 @@ from django.db import models
 
 class Server(models.Model):
     name = models.CharField(max_length=500)
+    hostid = models.CharField(max_length=500, null=True)
     date = models.DateField(blank=True, null=True)
     firewall = models.CharField(max_length=500, null=True)
     mcafee = models.CharField(max_length=500, null=True)
@@ -20,6 +21,10 @@ class Server(models.Model):
     open_ports = models.CharField(max_length=500, null=True)
     win_active = models.CharField(max_length=500, null=True)
     critc_sys_log = models.CharField(max_length=500, null=True)
+    sql_login_user = models.CharField(max_length=500 , null= True)
+    sql_xp_cmdshell= models.CharField(max_length=500 , null= True)
+    sql_version = models.CharField(max_length=500 , null= True)
+    sql_file_size = models.CharField(max_length=500 , null= True)
 
     def __str__(self):
         return self.name

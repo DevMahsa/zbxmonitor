@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="313b93d8-bdaa-42ae-8f00-37b1ec11cdde" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zbxapp/management/commands/sql_config_value.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zbxapp/management/commands/sql_file_size.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zbxapp/management/commands/sql_login_user.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zbxapp/management/commands/sql_version.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zbxapp/management/commands/ssl_cert_exp.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zbxapp/management/commands/export.py" afterPath="$PROJECT_DIR$/zbxapp/management/commands/export.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zbxapp/management/commands/get_items.py" afterPath="$PROJECT_DIR$/zbxapp/management/commands/get_items.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zbxapp/management/commands/max.py" afterPath="$PROJECT_DIR$/zbxapp/management/commands/max.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zbxapp/admin.py" afterPath="$PROJECT_DIR$/zbxapp/admin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zbxapp/management/commands/update.py" afterPath="$PROJECT_DIR$/zbxapp/management/commands/update.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zbxapp/models.py" afterPath="$PROJECT_DIR$/zbxapp/models.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,7 +21,9 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/zbxmonitor$palindrome.coverage" NAME="palindrome Coverage Results" MODIFIED="1525599621262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../codefight" />
+    <SUITE FILE_PATH="coverage/zbxmonitor$ssl_cert_exp.coverage" NAME="ssl_cert_exp Coverage Results" MODIFIED="1527683035494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zbxapp/management/commands" />
     <SUITE FILE_PATH="coverage/zbxmonitor$csvex.coverage" NAME="csvex Coverage Results" MODIFIED="1525514171338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zbxapp/management/commands" />
+    <SUITE FILE_PATH="coverage/zbxmonitor$sql_login_user.coverage" NAME="sql_login_user Coverage Results" MODIFIED="1527704139174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zbxapp/management/commands" />
     <SUITE FILE_PATH="coverage/zbxmonitor$update.coverage" NAME="update Coverage Results" MODIFIED="1524896773268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zbxapp/management/commands" />
   </component>
   <component name="DatabaseView">
@@ -33,6 +39,17 @@
         <item name="" type="eadb38e5:DatabaseStructure$Root" />
         <item name="zBx@localhost" type="e3449647:DbNodeDescriptor" />
       </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="zBx@localhost" type="e3449647:DbNodeDescriptor" />
+        <item name="zBx" type="e3449647:DbNodeDescriptor" />
+      </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="zBx@localhost" type="e3449647:DbNodeDescriptor" />
+        <item name="zBx" type="e3449647:DbNodeDescriptor" />
+        <item name="zbxapp_server" type="e3449647:DbNodeDescriptor" />
+      </path>
     </expand>
     <select />
   </component>
@@ -44,6 +61,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="get_items.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zbxapp/management/commands/get_items.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ssl_cert_exp.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zbxapp/management/commands/ssl_cert_exp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="zbxapp_server" pinned="false" current-in-tab="false">
         <entry file="das://table:/5708c567/d93a2b72-05ad-4391-af57-d798990f6b0b/zBx.zbxapp_server">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -59,59 +98,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="export.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/zbxapp/management/commands/export.py">
+      <file leaf-file-name="datetime.pyi" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2/datetime.pyi">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zbxapp_lastmemory" pinned="false" current-in-tab="false">
-        <entry file="das://table:/5708c567/d93a2b72-05ad-4391-af57-d798990f6b0b/zBx.zbxapp_lastmemory">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true">
-                <filter text="server_id = &quot;18377&quot;" />
-                <filter text="server_id=&quot;18414&quot;" />
-                <filter text="server_id = &quot;18378&quot;" />
-                <filter text="server_id = '18377'" />
-              </filtering>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zbxmonitor/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1170">
-              <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+            <state relative-caret-position="2805">
+              <caret line="188" column="18" lean-forward="false" selection-start-line="188" selection-start-column="10" selection-end-line="188" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="console_3.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d93a2b72-05ad-4391-af57-d798990f6b0b/console_3.sql">
+      <file leaf-file-name="max.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zbxapp/management/commands/max.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="45" lean-forward="false" selection-start-line="0" selection-start-column="45" selection-end-line="0" selection-end-column="45" />
+            <state relative-caret-position="75">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="get_items.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zbxapp/management/commands/get_items.py">
+      <file leaf-file-name="update.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zbxapp/management/commands/update.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="75">
+              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding>
-                <element signature="e#0#30#0" expanded="true" />
+                <element signature="e#0#51#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,7 +134,7 @@
         <entry file="file://$PROJECT_DIR$/zbxapp/admin.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -129,38 +142,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="max.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zbxapp/management/commands/max.py">
+      <file leaf-file-name="sql_version.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zbxapp/management/commands/sql_version.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="240">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
+                <marker date="1527682357114" expanded="true" signature="391:398" ph="SELECT CONVE... c" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="update.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zbxapp/management/commands/update.py">
+      <file leaf-file-name="sql_login_user.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zbxapp/management/commands/sql_login_user.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="240">
+              <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
+                <marker date="1527704660092" expanded="true" signature="394:422" ph="select * fro... sql_logins" />
+                <marker date="1527704660092" expanded="true" signature="394:443" ph="select * fro... sql_logins" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zbxapp_lastcpu" pinned="false" current-in-tab="false">
-        <entry file="das://table:/5708c567/d93a2b72-05ad-4391-af57-d798990f6b0b/zBx.zbxapp_lastcpu">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true">
-                <filter text="server_id =&quot;18377&quot;" />
-                <filter text="server_id = &quot;18377&quot;" />
-              </filtering>
+      <file leaf-file-name="sql_file_size.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zbxapp/management/commands/sql_file_size.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -182,6 +198,8 @@
       <find>memoryhist</find>
       <find>memoryhistory</find>
       <find>memoryhis</find>
+      <find>time</find>
+      <find>timezone</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/zbxapp/management</dir>
@@ -200,16 +218,22 @@
         <option value="$PROJECT_DIR$/zbxapp/crud.py" />
         <option value="$PROJECT_DIR$/zbxmonitor/settings.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d93a2b72-05ad-4391-af57-d798990f6b0b/console_1.sql" />
-        <option value="$PROJECT_DIR$/zbxapp/models.py" />
         <option value="$PROJECT_DIR$/zbxapp/management/commands/csvex.py" />
         <option value="$PROJECT_DIR$/../codefight/palindrome.py" />
-        <option value="$PROJECT_DIR$/zbxapp/admin.py" />
         <option value="$PROJECT_DIR$/zbxapp/management/commands/export.py" />
         <option value="$PROJECT_DIR$/zbxapp/management/commands/get_items.py" />
         <option value="$PROJECT_DIR$/zbxapp/management/commands/max.py" />
-        <option value="$PROJECT_DIR$/zbxapp/management/commands/update.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d93a2b72-05ad-4391-af57-d798990f6b0b/console_2.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d93a2b72-05ad-4391-af57-d798990f6b0b/console_3.sql" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/zbxapp/management/commands/update.py" />
+        <option value="$PROJECT_DIR$/zbxapp/management/commands/sql_config_value.py" />
+        <option value="$PROJECT_DIR$/zbxapp/models.py" />
+        <option value="$PROJECT_DIR$/zbxapp/management/commands/sql_version.py" />
+        <option value="$PROJECT_DIR$/zbxapp/management/commands/ssl_cert_exp.py" />
+        <option value="$PROJECT_DIR$/zbxapp/admin.py" />
+        <option value="$PROJECT_DIR$/zbxapp/management/commands/sql_login_user.py" />
+        <option value="$PROJECT_DIR$/zbxapp/management/commands/sql_file_size.py" />
       </list>
     </option>
   </component>
@@ -226,10 +250,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="22" />
     <option name="width" value="1280" />
-    <option name="height" value="722" />
+    <option name="height" value="721" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -280,6 +304,19 @@
             <path>
               <item name="zbxmonitor" type="b2602c69:ProjectViewProjectNode" />
               <item name="zbxmonitor" type="462c0819:PsiDirectoryNode" />
+              <item name="zbxapp" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zbxmonitor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zbxmonitor" type="462c0819:PsiDirectoryNode" />
+              <item name="zbxapp" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zbxmonitor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zbxmonitor" type="462c0819:PsiDirectoryNode" />
               <item name="zbxmonitor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -307,7 +344,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django server.zbxmonitor">
+  <component name="RunManager" selected="Django server.max">
     <configuration name="export" type="Python.DjangoServer" factoryName="Django server">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -392,6 +429,90 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="sql_config_value" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="zbxmonitor.settings" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="zbxmonitor" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="true" />
+      <option name="customRunCommand" value="sql_config_value" />
+    </configuration>
+    <configuration name="sql_file_size" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="zbxmonitor.settings" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="zbxmonitor" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="true" />
+      <option name="customRunCommand" value="sql_file_size" />
+    </configuration>
+    <configuration name="sql_login_user" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zbxapp/management/commands" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="zbxmonitor" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zbxapp/management/commands/sql_login_user.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="ssl_exp" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="zbxmonitor.settings" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="zbxmonitor" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="true" />
+      <option name="customRunCommand" value="ssl_cert_exp" />
+    </configuration>
     <configuration name="update" type="Python.DjangoServer" factoryName="Django server">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -437,17 +558,22 @@
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
     </configuration>
-    <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Django server.max" />
-      <item index="1" class="java.lang.String" itemvalue="Django server.update" />
-      <item index="2" class="java.lang.String" itemvalue="Django server.get_item" />
-      <item index="3" class="java.lang.String" itemvalue="Django server.zbxmonitor" />
-      <item index="4" class="java.lang.String" itemvalue="Django server.export" />
-      <item index="5" class="java.lang.String" itemvalue="Python.palindrome" />
+    <list size="10">
+      <item index="0" class="java.lang.String" itemvalue="Django server.ssl_exp" />
+      <item index="1" class="java.lang.String" itemvalue="Django server.max" />
+      <item index="2" class="java.lang.String" itemvalue="Django server.update" />
+      <item index="3" class="java.lang.String" itemvalue="Django server.get_item" />
+      <item index="4" class="java.lang.String" itemvalue="Django server.zbxmonitor" />
+      <item index="5" class="java.lang.String" itemvalue="Django server.sql_file_size" />
+      <item index="6" class="java.lang.String" itemvalue="Django server.sql_config_value" />
+      <item index="7" class="java.lang.String" itemvalue="Django server.export" />
+      <item index="8" class="java.lang.String" itemvalue="Python.palindrome" />
+      <item index="9" class="java.lang.String" itemvalue="Python.sql_login_user" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.palindrome" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.sql_login_user" />
+        <item index="1" class="java.lang.String" itemvalue="Python.palindrome" />
       </list>
     </recent_temporary>
   </component>
@@ -595,23 +721,51 @@
       <option name="project" value="LOCAL" />
       <updated>1525602880136</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="somehow complete!">
+      <created>1526201995905</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1526201995905</updated>
+    </task>
+    <task id="LOCAL-00021" summary="model changed!">
+      <created>1526940451418</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1526940451419</updated>
+    </task>
+    <task id="LOCAL-00022" summary="model changed!">
+      <created>1526940561964</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1526940561964</updated>
+    </task>
+    <task id="LOCAL-00023" summary="readme!">
+      <created>1526940651501</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1526940651501</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="722" extended-state="0" />
+    <frame x="0" y="22" width="1280" height="721" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30533117" sideWeight="0.491358" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36833602" sideWeight="0.491358" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294702" sideWeight="0.5613893" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5743134" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17851374" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294702" sideWeight="0.29725364" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294702" sideWeight="0.43861067" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32669982" sideWeight="0.43861067" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294702" sideWeight="0.45476574" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32669982" sideWeight="0.2924071" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294702" sideWeight="0.4345719" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39900663" sideWeight="0.43134087" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833335" sideWeight="0.4256866" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2536349" sideWeight="0.50864196" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39800996" sideWeight="0.43134087" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -635,10 +789,35 @@
     <MESSAGE value="max is created!" />
     <MESSAGE value="req is created!" />
     <MESSAGE value="rows and fields are changed!" />
-    <option name="LAST_COMMIT_MESSAGE" value="rows and fields are changed!" />
+    <MESSAGE value="somehow complete!" />
+    <MESSAGE value="model changed!" />
+    <MESSAGE value="readme!" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/zbxapp/management/commands/sql_config_value.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/zbxapp/management/commands/ssl_cert_exp.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/zbxapp/management/commands/sql_login_user.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/zbxapp/management/commands/max.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -646,26 +825,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="57" />
+      <option name="time" value="70" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://table:/5708c567/56528ade-3d20-4d0a-bb6d-e87851364b0b/zb.auth_group" />
-    <entry file="das://table:/5708c567/56528ade-3d20-4d0a-bb6d-e87851364b0b/zb.auth_group_permissions" />
-    <entry file="das://table:/5708c567/56528ade-3d20-4d0a-bb6d-e87851364b0b/zb.auth_permission" />
-    <entry file="das://table:/5708c567/56528ade-3d20-4d0a-bb6d-e87851364b0b/zb.zbxapp_item" />
-    <entry file="das://table:/5708c567/56528ade-3d20-4d0a-bb6d-e87851364b0b/zb.zbxapp_name" />
-    <entry file="file:///usr/local/lib/python2.7/site-packages/django/core/management/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="329" column="0" lean-forward="false" selection-start-line="329" selection-start-column="0" selection-end-line="329" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/5708c567/56528ade-3d20-4d0a-bb6d-e87851364b0b/zb.zbxapp_memory" />
-    <entry file="das://table:/5708c567/56528ade-3d20-4d0a-bb6d-e87851364b0b/zb.zbxapp_cpu" />
-    <entry file="das://table:/5708c567/56528ade-3d20-4d0a-bb6d-e87851364b0b/zb.zbxapp_cpuhistory" />
     <entry file="das://table:/5708c567/56528ade-3d20-4d0a-bb6d-e87851364b0b/zb.zbxapp_memoryhistory" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/08483c2e-172a-4240-9d89-efcf1d409d4f/console.sql">
       <provider selected="true" editor-type-id="text-editor">
@@ -743,28 +907,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zbxapp/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zbxapp/crud.py" />
-    <entry file="file://$PROJECT_DIR$/zbxapp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zbxapp/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zbxmonitor/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -800,6 +943,92 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../codefight/palindrome.py" />
+    <entry file="file://$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d93a2b72-05ad-4391-af57-d798990f6b0b/console_2.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zbxmonitor/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d93a2b72-05ad-4391-af57-d798990f6b0b/console_3.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="45" lean-forward="false" selection-start-line="0" selection-start-column="45" selection-end-line="0" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zbxapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zbxapp/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zbxapp/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zbxapp/management/commands/export.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#30#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/5708c567/d93a2b72-05ad-4391-af57-d798990f6b0b/zBx.zbxapp_lastmemory">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="server_id = &quot;18377&quot;" />
+            <filter text="server_id=&quot;18414&quot;" />
+            <filter text="server_id = &quot;18378&quot;" />
+            <filter text="server_id = '18377'" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
     <entry file="das://table:/5708c567/d93a2b72-05ad-4391-af57-d798990f6b0b/zBx.django_session">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -807,32 +1036,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../codefight/palindrome.py">
+    <entry file="file:///usr/local/lib/python2.7/site-packages/django/core/management/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="112">
+          <caret line="329" column="0" lean-forward="false" selection-start-line="329" selection-start-column="0" selection-end-line="329" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
+    <entry file="das://table:/5708c567/d93a2b72-05ad-4391-af57-d798990f6b0b/zBx.zbxapp_lastcpu">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="server_id =&quot;18377&quot;" />
+            <filter text="server_id = &quot;18377&quot;" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zbxapp/management/commands/sql_config_value.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        <state relative-caret-position="180">
+          <caret line="12" column="48" lean-forward="false" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+            <marker date="1527679186988" expanded="true" signature="396:512" ph="SELECT CONVE... configurations" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zbxapp/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="17" column="56" lean-forward="false" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+        <state relative-caret-position="285">
+          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d93a2b72-05ad-4391-af57-d798990f6b0b/console_2.sql">
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2017.2/python_stubs/-1199944087/datetime.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+        <state relative-caret-position="2430">
+          <caret line="162" column="6" lean-forward="false" selection-start-line="162" selection-start-column="6" selection-end-line="162" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2/datetime.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2805">
+          <caret line="188" column="18" lean-forward="false" selection-start-line="188" selection-start-column="10" selection-end-line="188" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -849,90 +1102,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/5708c567/d93a2b72-05ad-4391-af57-d798990f6b0b/zBx.zbxapp_lastcpu">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="server_id =&quot;18377&quot;" />
-            <filter text="server_id = &quot;18377&quot;" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zbxapp/management/commands/update.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zbxapp/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/zbxapp/management/commands/get_items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/zbxapp/management/commands/max.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="75">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zbxapp/management/commands/sql_file_size.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zbxapp/management/commands/get_items.py">
+    <entry file="file://$PROJECT_DIR$/zbxapp/management/commands/update.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="75">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d93a2b72-05ad-4391-af57-d798990f6b0b/console_3.sql">
+    <entry file="file://$PROJECT_DIR$/zbxapp/management/commands/ssl_cert_exp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="45" lean-forward="false" selection-start-line="0" selection-start-column="45" selection-end-line="0" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/5708c567/d93a2b72-05ad-4391-af57-d798990f6b0b/zBx.zbxapp_lastmemory">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="server_id = &quot;18377&quot;" />
-            <filter text="server_id=&quot;18414&quot;" />
-            <filter text="server_id = &quot;18378&quot;" />
-            <filter text="server_id = '18377'" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zbxmonitor/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zbxapp/management/commands/export.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+        <state relative-caret-position="255">
+          <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zbxapp/management/commands/sql_version.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+            <marker date="1527682357114" expanded="true" signature="391:398" ph="SELECT CONVE... c" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zbxapp/management/commands/sql_login_user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+            <marker date="1527704660092" expanded="true" signature="394:422" ph="select * fro... sql_logins" />
+            <marker date="1527704660092" expanded="true" signature="394:443" ph="select * fro... sql_logins" />
           </folding>
         </state>
       </provider>
