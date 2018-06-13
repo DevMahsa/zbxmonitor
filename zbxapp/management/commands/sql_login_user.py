@@ -14,7 +14,7 @@ def sql_login_user():
         result = cursor.fetchall()
         obj.sql_login_user = ""
         for i in range(len(result)):
-            obj.sql_login_user += str(result[i][0])
+            obj.sql_login_user += str(result[i][0]) + ', '+'\n'
         obj.save()
     except Exception as e:
         print e

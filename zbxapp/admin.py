@@ -9,9 +9,9 @@ from .models import Server, LastMemory, LastCpu
 class ServerModelAdmin(admin.ModelAdmin):
     actions = ["export_as_csv"]
     list_display = (
-        'name', 'date', 'firewall', 'mcafee', 'telnet', 'maxusedmemory', 'maxusedcpu', 'freediskc', 'freediskd',
+        'name', 'date', 'firewall', 'mcafee', 'telnet', 'anydesk','time_win_sync','smb1_config','file_sharing_port','new_system_event','new_app_event','microsoft_update','local_user','maxusedmemory', 'maxusedcpu', 'freediskc', 'freediskd',
         'freediske', 'freediskf', 'freediskg',
-        'freediskh', 'freediski','ssl_cert_exp','open_ports','win_active','critc_sys_log', 'sql_login_user', 'sql_xp_cmdshell','sql_version', 'sql_file_size')
+        'freediskh', 'freediski','ssl_cert_exp','win_active','sql_login_user', 'sql_xp_cmdshell','sql_version', 'sql_file_size','backup_name','windows_version','open_port', 'eventlog_max_size')
     search_fields = ('name',)
 
     def export_as_csv(self, request, queryset):

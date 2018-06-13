@@ -10,7 +10,7 @@ def sql_config_value():
         cursor = connection.cursor()
         cursor.execute("SELECT CONVERT(INT, ISNULL(value, value_in_use)) AS config_value FROM sys.configurations WHERE name = N'xp_cmdshell' ;")
         result = cursor.fetchall()
-        obj.sql_config_value = str(result[0][0])
+        obj.sql_xp_cmdshell = str(result[0][0])
         obj.save()
     except Exception as e:
         print e
