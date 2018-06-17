@@ -9,50 +9,27 @@ def backup_url():
         connection = pymssql.connect(host='192.168.112.219', server='SQL2017', port='49950', user='Zabbix1',
                                      password='Zabbix@')
         cursor = connection.cursor()
-        cursor.execute('''SELECT 
-A.[Server], 
-A.last_db_backup_date, 
-B.backup_start_date, 
-B.expiration_date, 
-B.backup_size, 
-B.logical_device_name, 
-B.physical_device_name, 
-B.backupset_name, 
-B.description 
-FROM 
-( 
+        cursor.execute('''WITH LastBackUp AS
+(
+SELECT  bs.database_name,
+        bs.backup_size,
+        bs.backup_start_date,
+        bmf.physical_device_name,
+        Position = ROW_NUMBER() OVER( PARTITION BY bs.database_name ORDER BY bs.backup_start_date DESC )
+FROM  msdb.dbo.backupmediafamily bmf
+JOIN msdb.dbo.backupmediaset bms ON bmf.media_set_id = bms.media_set_id
+JOIN msdb.dbo.backupset bs ON bms.media_set_id = bs.media_set_id
+WHERE   bs.[type] = 'D'
+AND bs.is_copy_only = 0
+)
 SELECT 
-CONVERT(CHAR(100), SERVERPROPERTY('Servername')) AS Server, 
-msdb.dbo.backupset.database_name, 
-MAX(msdb.dbo.backupset.backup_finish_date) AS last_db_backup_date 
-FROM msdb.dbo.backupmediafamily 
-INNER JOIN msdb.dbo.backupset ON msdb.dbo.backupmediafamily.media_set_id = msdb.dbo.backupset.media_set_id 
-WHERE msdb..backupset.type = 'D' 
-GROUP BY 
-msdb.dbo.backupset.database_name 
-) AS A 
-
-LEFT JOIN
-
-( 
-SELECT 
-CONVERT(CHAR(100), SERVERPROPERTY('Servername')) AS Server, 
-msdb.dbo.backupset.database_name, 
-msdb.dbo.backupset.backup_start_date, 
-msdb.dbo.backupset.backup_finish_date, 
-msdb.dbo.backupset.expiration_date, 
-msdb.dbo.backupset.backup_size, 
-msdb.dbo.backupmediafamily.logical_device_name, 
-msdb.dbo.backupmediafamily.physical_device_name, 
-msdb.dbo.backupset.name AS backupset_name, 
-msdb.dbo.backupset.description 
-FROM msdb.dbo.backupmediafamily 
-INNER JOIN msdb.dbo.backupset ON msdb.dbo.backupmediafamily.media_set_id = msdb.dbo.backupset.media_set_id 
-WHERE msdb..backupset.type = 'D' 
-) AS B 
-ON A.[server] = B.[server] AND A.[database_name] = B.[database_name] AND A.[last_db_backup_date] = B.[backup_finish_date] 
-ORDER BY 
-A.database_name''')
+        database_name AS [Database],
+        CAST(backup_size / 1048576 AS DECIMAL(10, 2) ) AS [BackupSizeMB],
+        backup_start_date AS [Last Full DB Backup Date],
+        physical_device_name AS [Backup File Location]
+FROM LastBackUp
+WHERE Position = 1
+ORDER BY [Database];''')
 
 
         # cursor.execute(
@@ -60,7 +37,7 @@ A.database_name''')
         result = cursor.fetchall()
         obj.backup_name = ""
         for i in range(len(result)):
-            obj.backup_name+= str(result[i][7])+', '+'\n'
+            obj.backup_name+= str(result[i][0])+' , '+str(result[i][1])+' , '+str(result[i][2])+' , '+str(result[i][3])+', '+'\n'
         obj.save()
     except Exception as e:
         print e

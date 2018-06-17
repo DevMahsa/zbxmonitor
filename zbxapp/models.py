@@ -23,7 +23,7 @@ class Server(models.Model):
     sql_login_user = models.CharField(max_length=500 , null= True)
     sql_xp_cmdshell= models.CharField(max_length=500 , null= True)
     sql_version = models.CharField(max_length=500 , null= True)
-    sql_file_size = models.CharField(max_length=500 , null= True)
+    sql_file_size = models.TextField (null= True)
     open_port = models.TextField( null= True)
     windows_version = models.CharField(max_length=500 , null= True)
     anydesk = models.CharField(max_length=500 ,null= True)
