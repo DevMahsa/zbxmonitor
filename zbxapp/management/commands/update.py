@@ -21,7 +21,7 @@ def update():
             get.save()
 
     except Exception as e:
-        print e
+        print (e)
 
 
 class Command(BaseCommand):

@@ -13,7 +13,7 @@ def sql_config_value():
         obj.sql_xp_cmdshell = str(result[0][0])
         obj.save()
     except Exception as e:
-        print e
+        print (e)
 
 
 class Command(BaseCommand):

@@ -13,7 +13,7 @@ def sql_version():
         obj.sql_version = str(result[0][0]).split('\n')[0]
         obj.save()
     except Exception as e:
-        print e
+        print (e)
 
 class Command(BaseCommand):
     def handle(self, **options):

@@ -17,7 +17,7 @@ def sql_login_user():
             obj.sql_login_user += str(result[i][0]) + ', '+'\n'
         obj.save()
     except Exception as e:
-        print e
+        print (e)
 
 
 class Command(BaseCommand):

@@ -30,7 +30,7 @@ from sys.databases db''')
         # obj.sql_file_size = float(obj.sql_file_size)/(1024*1024)
         # obj.save()
     except Exception as e:
-        print e
+        print (e)
 
 
 class Command(BaseCommand):

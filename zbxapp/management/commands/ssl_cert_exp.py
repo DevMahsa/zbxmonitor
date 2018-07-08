@@ -20,7 +20,7 @@ def ssl_cert_exp():
         obj.ssl_cert_exp =str(year +'-'+month+'-'+day)
         obj.save()
     except Exception as e:
-        print e
+        print (e)
 
 
 class Command(BaseCommand):

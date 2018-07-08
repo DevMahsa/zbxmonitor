@@ -16,7 +16,7 @@ def max():
                     'memory__max']
                 host.save()
     except Exception as e:
-        print e
+        print (e)
 
 
 class Command(BaseCommand):

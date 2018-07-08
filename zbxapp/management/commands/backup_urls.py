@@ -40,7 +40,7 @@ ORDER BY [Database];''')
             obj.backup_name+= str(result[i][0])+' , '+str(result[i][1])+' , '+str(result[i][2])+' , '+str(result[i][3])+', '+'\n'
         obj.save()
     except Exception as e:
-        print e
+        print (e)
 
 
 class Command(BaseCommand):

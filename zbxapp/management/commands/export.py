@@ -19,7 +19,7 @@ def export():
                                                          date=datetime.now())
 
     except Exception as e:
-        print e
+        print (e)
 
 
 class Command(BaseCommand):
