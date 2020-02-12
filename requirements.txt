@@ -8,7 +8,7 @@ confusable-homoglyphs==2.0.2
 contextlib2==0.5.5
 coverage==4.4.1
 Cython==0.27.3
-Django==1.11.12
+Django==1.11.28
 django-cas==2.0.3
 django-cas-client==1.4.0
 django-common-helpers==0.9.1
